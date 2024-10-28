@@ -1,0 +1,50 @@
+body{
+    background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-cubes_52683-76469.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Sets the height to fill the whole viewport */
+    margin: 0;
+    /*width: 300px;*/
+    filter: brightness(1.5);    
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+.animated-element {
+    
+    animation: slideIn 2s ease-out forwards; /* Applying the animation */
+  }
+
+.head1{
+    font-family: Arial, sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+.head2{
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.head3{
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tt{
+    text-align: center;
+}

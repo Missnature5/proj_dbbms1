@@ -1,0 +1,108 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/05/cute-blue-026.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Sets the height to fill the whole viewport */
+    margin: 0;
+    filter: brightness(1.5);  
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.animated-element {
+    background-color: hsl(249, 90%, 28%);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    animation: slideIn 2s ease-out forwards; /* Applying the animation */
+  }
+  
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a slight background to enhance readability */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#taskInput {
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#addTaskBtn {
+    padding: 10px 15px;
+    background-color: hsl(120, 9%, 96%);
+    color: hsl(0, 0%, 3%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+#addTaskBtn:hover {
+    background-color: rgb(9, 137, 211);
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.task {
+    background-color: hsl(240, 18%, 97%);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.delete-btn {
+    background-color: hsl(0, 89%, 26%);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: hsl(324, 48%, 41%);
+}
