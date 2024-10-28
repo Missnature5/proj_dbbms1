@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="{{ url_for('static', filename='script/script2.js') }}" defer></script>
+
+</head>
+<body>
+    <link rel="stylesheet" href="{{url_for('static' , filename = 'css/styles2.css')}}">
+    <div class="animated-element">
+    <h1 class="head1" style="color: white;">
+        <b>
+            <u>
+        WELCOME TO YOUR TASK MANAGER !!!!
+            </u>
+        </b>
+    </h1>
+"
+    <h2 class="head2" style="color: white;">
+        <b>Manage your task daily easily</b></h2>
+
+    <h3 class="head3" style="color: white;"><b>add task that are still pending to do and then once you complete your tasks delete those</b></h3>
+    </div>
+    <div class="tt">
+    <form action="/submit" method="post">
+        <label for="username" style="color: rgb(252, 248, 248);"><b>Username:</b></label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="email" style="color: hsl(0, 8%, 97%);"><b>Email:</b></label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>

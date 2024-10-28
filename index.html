@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <!-- Ensure styles and scripts are linked correctly -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='script/script.js') }}" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="animated-element"><b>Task Manager</b></h1>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter new task">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <ul id="taskList">
+            <!-- Tasks will appear here -->
+        </ul>
+    </div>
+</body>
+</html>
